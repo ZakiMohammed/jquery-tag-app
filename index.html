@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tag App</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container mt-5 mb-5">
+        <div class="row">
+            <div class="col">
+                <h4 class="mb-3">Tags</h4>
+                <div class="mb-3">
+                    <!-- controls -->
+                    <div class="input-group mb-3">
+                        <input type="text" id="tag" class="form-control" placeholder="Enter your task">
+                        <div id="group-add" class="input-group-append">
+                            <button id="add" class="btn btn-primary" type="button">Add</button>
+                        </div>
+                        <div id="group-update" class="input-group-append" style="display: none">
+                            <button id="update" class="btn btn-success" type="button">Update</button>
+                            <button id="cancel" class="btn btn-outline-secondary" type="button">Cancel</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="table-responsive">
+                    <table class="table table-striped table-bordered">
+                        <thead>
+                            <tr>
+                                <th>Tag Name</th>
+                                <th style="width: 30%;"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr id="empty">
+                                <td colspan="2">No tags found</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <button id="removeAll" type="button" class="btn btn-light btn-sm" style="display: none">Clear
+                    All</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
